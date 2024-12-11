@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvj1q27ddo1km"]
+
+[ext_resource type="Texture2D" uid="uid://u1dk08wq1lb3" path="res://resource/tilesets/urizen.png" id="1_rmvr5"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hoxoc"]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2qfg"]
+atlas = ExtResource("1_rmvr5")
+region = Rect2(1, 66, 12, 12)
+
+[node name="ground" type="Sprite2D"]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_hoxoc")
+position = Vector2(42, 6)
+texture = SubResource("AtlasTexture_o2qfg")
